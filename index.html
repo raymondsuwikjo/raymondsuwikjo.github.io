@@ -17,8 +17,27 @@
         </div>
     </div>
     <div id="bg-container">
-        <div class="current-bg-color"><p>Current Color : <span id="current-color"></span></p></div>
-        <button type="button" id="clickme-button">Change the color!</button>
+        <div class="status-style" id="copy-status"></div>
+        <div class="color-container">
+            <div class="current-bg-color">
+                <p>Current Color : <input type="text" id="current-color" /></p>
+                <button type="button" id="copy-to-clipboard">Copy!</button>
+            </div>
+            <div class="select-color-profile">
+                <fieldset>
+                    <legend>Select your color Profile!</legend>
+                    <div>
+                        <input type="radio" id="hex-color" name="color-profile" value="hex"/>
+                        <label>Hex Color</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="rgb-color" name="color-profile" value="rgb" checked />
+                        <label>RGB Color</label>
+                    </div>
+                </fieldset>
+            </div>
+            <button type="button" id="clickme-button">Change the color!</button>
+        </div>
     </div>
 </body>
 </html>

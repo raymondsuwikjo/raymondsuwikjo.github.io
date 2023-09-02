@@ -38,8 +38,17 @@ html, body {
     text-align: center;
 }
 
+.current-bg-color {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 
-.current-bg-color p{
+
+.current-bg-color p {
+    display: flex;
+    align-items: center;
     background-color: black;
     color: white;
     font-family: 'Roboto', sans-serif;
@@ -47,11 +56,60 @@ html, body {
     font-size: 2em;
     border-radius: 5px;
     padding: 0.3em;
-    margin: 10vh auto;
+}
+
+.current-bg-color input {
+    width: 18vw;
+    height: 1.5em;
+    margin-left: 0.5em;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.color-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.select-color-profile {
+    background-color: black;
+    color: white;
+    padding: 0.7em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.3em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+}
+
+.select-color-profile input {
+  margin: 2vh 0;
+}
+
+.select-color-profile label {
+    font-size: 0.8em;
+  }
+
+#copy-status {
+    display: none;
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    font-size: 1em;
+    padding: 0.7em;
+    border-radius: 1em;
+}
+
+#copy-status p {
+    margin: 0;
 }
 
 
-#clickme-button {
+#clickme-button, #copy-to-clipboard {
     align-items: center;
     appearance: none;
     background-color: #FCFCFD;
@@ -83,18 +141,20 @@ html, body {
 }
 
 
-#clickme-button:focus {
+#clickme-button:focus, #copy-to-clipboard:focus {
   box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
 }
 
-#clickme-button:hover {
+#clickme-button:hover, #copy-to-clipboard:hover {
   box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
   transform: translateY(-2px);
 }
 
-#clickme-button:active {
+#clickme-button:active, #copy-to-clipboard:active {
   box-shadow: #D6D6E7 0 3px 7px inset;
   transform: translateY(2px);
 }
 
-
+#copy-to-clipboard {
+    margin-left: 1.5vw;
+}
